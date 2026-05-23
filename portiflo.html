@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Professional Profile</title>
+    <link rel="stylesheet" href="portiflo.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 id="heroName">Welcome to My Portfolio</h1>
+                    <p id="heroTitle">Creative Developer & Designer</p>
+                    <p id="heroDescription">I create beautiful and functional digital experiences</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img id="profileImage" src="https://via.placeholder.com/300" alt="Profile Picture" class="profile-pic">
+                    <label for="profileInput" class="image-upload-label">📷</label>
+                    <input type="file" id="profileInput" accept="image/*" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 id="aboutTitle">Professional Summary</h3>
+                    <p id="aboutDescription">I'm a passionate developer with expertise in creating beautiful, functional, and user-friendly websites and applications. With years of experience in web development and design, I help businesses establish strong digital presence.</p>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h3 id="stat1-number">10+</h3>
+                        <p id="stat1-label">Years Experience</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="stat2-number">50+</h3>
+                        <p id="stat2-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3 id="stat3-number">30+</h3>
+                        <p id="stat3-label">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="portfolio-header">
+                <p>Here are some of my recent projects and works</p>
+                <button class="btn btn-add" onclick="openProjectModal()">+ Add Project</button>
+            </div>
+
+            <div class="portfolio-grid" id="portfolioGrid">
+                <!-- Portfolio items will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful and modern website designs tailored to your brand</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Responsive and performant websites built with latest technologies</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Cross-platform mobile apps that work seamlessly</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing support and maintenance for your projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p id="contactEmail">basilnzoputagamil.com</p>
+                            <a href="mailto:basilnzoputagamil.com" class="contact-link">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📱</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p id="contactnumber"> 09050215599</p>
+                            <a href="09050215599" class="contact-link">send message</a>
+                            
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">💬</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p id="WhatsApp"> 09050215599</p>
+                            <a href="09050215599" class="contact-link">send message</a>
+                            
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h4>Location</h4>
+                            <p id="contactLocation">Umuchukwu, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" class="social-icon">💼</a>
+                        <a href="https://github.com" target="_blank" class="social-icon">🐙</a>
+                        <a href="https://twitter.com" target="_blank" class="social-icon">𝕏</a>
+                        <a href="https://instagram.com" target="_blank" class="social-icon">📷</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+            <p>Email: <a href="mailto:basilnzoputagamil.com">basilnzoputagamil.com</a></p>
+            <p>Designed & Built with ❤️</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Adding Project -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <h2>Add New Project</h2>
+            <form id="projectForm">
+                <div class="form-group">
+                    <label>Project Title</label>
+                    <input type="text" id="projectTitle" placeholder="e.g., E-Commerce Website" required>
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea id="projectDescription" placeholder="Describe your project..." rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="projectCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile App">Mobile App</option>
+                        <option value="UI/UX">UI/UX</option>
+                        <option value="Branding">Branding</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Project Image</label>
+                    <input type="file" id="projectImage" accept="image/*" required>
+                    <div id="imagePreview" class="image-preview"></div>
+                </div>
+                <div class="form-group">
+                    <label>Technologies Used</label>
+                    <input type="text" id="projectTech" placeholder="e.g., React, Node.js, MongoDB">
+                </div>
+                <div class="form-group">
+                    <label>Project Link (Optional)</label>
+                    <input type="url" id="projectLink" placeholder="https://example.com">
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-primary">Add Project</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeProjectModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal for Editing Profile -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSettingsModal()">&times;</span>
+            <h2>Edit Profile</h2>
+            <form id="settingsForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="settingName" required>
+                </div>
+                <div class="form-group">
+                    <label>Professional Title</label>
+                    <input type="text" id="settingTitle" required>
+                </div>
+                <div class="form-group">
+                    <label>About Description</label>
+                    <textarea id="settingDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="settingEmail" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" id="settingPhone" required>
+                </div>
+                <div class="form-group">
+                    <label>WhatsApp</label>
+                    <input type="tel" id="settingWhatsapp" required>
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" id="settingLocation" required>
+                </div>
+                <div class="form-group">
+                    <label>Years Experience</label>
+                    <input type="number" id="settingExperience" required>
+                </div>
+                <div class="form-group">
+                    <label>Projects Completed</label>
+                    <input type="number" id="settingProjects" required>
+                </div>
+                <div class="form-group">
+                    <label>Happy Clients</label>
+                    <input type="number" id="settingClients" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-secondary" onclick="closeSettingsModal()">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Settings Button (floating) -->
+    <button class="floating-settings-btn" onclick="openSettingsModal()">⚙️</button>
+
+    <script src="jsworkd.js"></script>
+</body>
+</html>
